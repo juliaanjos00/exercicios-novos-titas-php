@@ -8,7 +8,7 @@
  <title>Exercicio-1</title>
  </head>
  <body>
-    <fieldset id=box>
+    <fieldset id="box">
  <div><strong> <h1  id="tilulo"> Exercício 1 </h1></strong> </div>
  <p><h3 id= "text">Construir um algoritmo que leia 2 números e
     efetue a adição. Caso o valor somado seja
@@ -25,6 +25,6 @@
            <input type="number" placeholder="Escolha um número..." name="value2"/><br /> <br />
            <p><input type="submit" name="enviar" value="Enviar"/>	</p>
         </div>
-  </fieldset id=box>
+  </fieldset>
 </body>
 </html> 
