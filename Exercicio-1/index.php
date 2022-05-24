@@ -25,3 +25,6 @@
            <input type="number" placeholder="Escolha um número..." name="value2"/><br /> <br />
            <p><input type="submit" name="enviar" value="Enviar"/>	</p>
         </div>
+  </fieldset id=box>
+</body>
+</html> 
