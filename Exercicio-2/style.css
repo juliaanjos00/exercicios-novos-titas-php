@@ -1,0 +1,37 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#titulo{ 
+    text-align: center;
+    font-family: sans-serif;
+    color:rgb(11, 14, 20);
+} 
+
+#text{
+    font-family: sans-serif;
+    color:rgb(2, 20, 24);
+    margin-left: 10%;
+}
+body{
+    background-color:rgb(209, 214, 243);
+    font-family: sans-serif;
+    font-size: 1;
+    color: rgb(0, 0, 0);
+    margin-left: 37%;
+    justify-content: center;
+
+} 
+#box{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:rgba(189, 235, 247, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    width: 20%;
+}
+fieldset{
+    border:3px solid rgb(5, 9, 12);
+}
