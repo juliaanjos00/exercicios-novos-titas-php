@@ -27,9 +27,58 @@
         <label for="number">Idade</label><br />  
         <input type="number" class=input name="value3" value="<?= $idade ?>" id="idade" placeholder="Idade..."/>
         <div class="underline"></div><br />
-        <button><input type="submit"  class= "botao" name="Cadastrar" value="Cadastrar"/><button>
-        </form>
-    </div>
+        <input type="submit"  class= "botao" name="Cadastrar" value="Cadastrar"/><br />
+        
 
+  <?php
+
+    $nome ="";
+    $idade= "";
+    $sexo= "";
+
+    if(isset($_POST['value1']) && ($_POST['value2']) && ($_POST['value3'])) {
+				
+        $nome = $_POST['value1'];
+        $sexo = $_POST['value2'];
+        $idade = $_POST['value3'];
+ }
+
+    if(isset($_POST['value1']) && ($_POST['value2']) && ($_POST['value3'])) {
+		
+    if ($sexo == "Feminino" && $idade <= 25) {
+        echo "<div class='results'> $nome,Parabéns!Você foi aceita.</div>";
+    } 
+    
+    else if ($sexo == "feminino" && $idade <= 25) {
+      echo "<div class='results'> $nome, Parabéns!Você foi aceita.</div>";
+    }
+
+    else if ($sexo == "Feminino" && $idade >= 25) {
+        echo "<div class='results'>$nome, Não aceita.</div>";
+    }
+
+    else if ($sexo == "feminino" && $idade >= 25) {
+        echo "<div class='results'> $nome, Não aceita.</div>";
+    }
+
+    else if ($sexo == "masculino" && $idade >= 25) {
+        echo "<div class='results'> $nome, Não aceito, projeto destinado a pessoas do sexo feminino.</div>";
+    }
+    else if ($sexo == "Masculino" && $idade >= 25) {
+        echo "<div class='results'> $nome Não aceito, projeto destinado a pessoas do sexo feminino.</div>";
+    }
+
+    else if ($sexo == "masculino" && $idade <= 25) {
+        echo "<div class='results'> $nome Não aceito,projeto destinado a pessoas do sexo feminino.</div>";
+    }
+    else if ($sexo == "Masculino" && $idade <= 25) {
+        echo "<div class='results'> $nome Não aceito, projeto destinado a pessoas do sexo feminino .</div>";
+    }
+
+}
+
+ ?>
+    </form>
+    </div>
 </body>
 </html>
