@@ -34,8 +34,36 @@
       
       <br /><input type="submit" class= "button"name="enviar" value="Enviar" class="enviar"/>
      
+
+      <?php 
+        $num1 = "";
+        $num2 = "";
+        $num3 = "";	
+
+        if(isset($_POST['value1']) && ($_POST['value2']) && ($_POST['value3'])) {
+
+        $num1 = $_POST['value1'];
+        $num2 = $_POST['value2'];
+        $num3 = $_POST['value3'];
+
+        if	   ($num2 > $num1 && $num1 > $num3) echo "<div class='results'>$num2 $num1 $num3</div>";
+        elseif ($num3 > $num2 && $num2 > $num1) echo "<div class='results'>$num3 $num2 $num1</div>";
+        elseif ($num1 > $num2 && $num2 > $num3) echo "<div class='results'>$num1 $num2 $num3</div>";
+        elseif ($num2 > $num1 && $num1 > $num3) echo "<div class='results'>$num2 $num1 $num3</div>";
+        elseif ($num1 > $num3 && $num3 > $num2) echo "<div class='results'>$num1 $num3 $num2</div>";
+        elseif ($num3 > $num1 && $num1 > $num2) echo "<div class='results'>$num3 $num1 $num2</div>";
+        elseif ($num3 > $num2 && $num2 > $num1) echo "<div class='results'>$num3 $num2 $num1</div>";
+        elseif ($num3 > $num1 && $num1 > $num2) echo "<div class='results'>$num3 $num1 $num2</div>";
+        elseif ($num2 > $num3 && $num3 > $num1) echo "<div class='results'>$num2 $num3 $num1</div>";
+		
+    }
+
+
+     ?>
+
      </form>
    
     </div>
+    
 </body>
 </html>
