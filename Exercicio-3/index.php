@@ -19,13 +19,13 @@
         <br /> 
         <form id="formulario" action="/Exercicio-3/index.php" method="POST">
         <label for="text">Nome</label><br/>
-        <input type="text" class= input name="value1" value="<?= $nome ?>" id="Nome"placeholder="Name..."/><br />
+        <input type="text" class= input name="nome" value="<?= $nome ?>" id="Nome"placeholder="Name..."/><br />
         <div class="input-field"><br /></div>
         <label for="text">Sexo</label><br />      
-        <input type="text" class= input name="value2" value="<?= $sexo ?>" id="Sexo"  placeholder="Sexo..."/>
+        <input type="text" class= input name="sexo" value="<?= $sexo ?>" id="Sexo"  placeholder="Sexo..."/>
         <div class="input-field"><br /></div>
         <label for="number">Idade</label><br />  
-        <input type="number" class=input name="value3" value="<?= $idade ?>" id="idade" placeholder="Idade..."/>
+        <input type="number" class=input name="idade" value="<?= $idade ?>" id="idade" placeholder="Idade..."/>
         <div class="underline"></div><br />
         <input type="submit"  class= "botao" name="Cadastrar" value="Cadastrar"/><br />
         
