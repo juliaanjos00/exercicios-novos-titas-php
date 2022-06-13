@@ -21,18 +21,18 @@
 
      <form id="formulario" action="Exercicio-4/index.php" method="post">
        <label for="number" >Número 1 </label> <br />
-       <input type="number" div class= "box"   name="value1"  id="valor1"  placeholder="Digite um número..."/>
+       <input type="number"  class= "box"   name="value1"  id="valor1"  placeholder="Digite um número..."/>
        <div class="underline"></div>
 
        <label for="number" >Número 2 </label> <br />
-       <input type="number" div class = "box" name="value2"  id="valor2"  placeholder="Digite um número..."/>
+       <input type="number"  class = "box" name="value2"  id="valor2"  placeholder="Digite um número..."/>
        <div class="underline"></div>
       
        <label for="number" >Número 3 </label> <br />
-       <input type="number" div class="box" name="value3"  id="valor3"  placeholder="Digite um número..."/>
+       <input type="number"  class="box" name="value3"  id="valor3"  placeholder="Digite um número..."/>
        <div class="underline"></div>
       
-      <br /><input type="submit" div class= "button"name="enviar" value="Enviar" class="enviar"/>
+      <br /><input type="submit" class= "button"name="enviar" value="Enviar" class="enviar"/>
      
      </form>
    
