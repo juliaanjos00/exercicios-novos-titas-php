@@ -19,7 +19,7 @@
         <br /> 
         <form id="formulario" action="/Exercicio-3/index.php" method="POST">
         <label for="text">Nome</label><br/>
-        <input type="text" class= input name="nome" value="<?= $nome ?>" id="Nome"placeholder="Name..."/><br />
+        <input type="text" class= input name="nome" value="<?= $nome ?>" id="Nome"placeholder="Nome..."/><br />
         <div class="input-field"><br /></div>
         <label for="text">Sexo</label><br />      
         <input type="text" class= input name="sexo" value="<?= $sexo ?>" id="Sexo"  placeholder="Sexo..."/>
@@ -36,11 +36,11 @@
     $idade= "";
     $sexo= "";
 
-    if(isset($_POST['value1']) && ($_POST['value2']) && ($_POST['value3'])) {
+    if(isset($_POST['nome']) && ($_POST['sexo']) && ($_POST['idade'])) {
 				
-        $nome = $_POST['value1'];
-        $sexo = $_POST['value2'];
-        $idade = $_POST['value3'];
+        $nome = $_POST['nome'];
+        $sexo = $_POST['sexo'];
+        $idade = $_POST['idade'];
  }
 
     if(isset($_POST['value1']) && ($_POST['value2']) && ($_POST['value3'])) {
@@ -80,5 +80,6 @@
  ?>
     </form>
     </div>
+    
 </body>
 </html>
