@@ -1,0 +1,90 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: linear-gradient(-45deg, #3e3f97, #f29580, #8cdbe0);
+}
+
+.form{
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(221, 241, 241);
+    border-radius: 10px;
+    padding: 60px;
+    width: min-content;
+    align-items: center;
+    animation-name: fade;
+    animation-duration: 4s;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+input{
+    font-size: 18px;
+    color: rgb(22, 11, 11);
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 14px 22px;
+    position: relative;
+}
+
+ input::placeholder {
+    color: #0e0c08;
+  }
+
+  .button{
+      height: 3rem;
+      width: 10rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 8px;
+      background: #424c61;
+      cursor: pointer;
+  }
+
+  .button::after{
+      content: '';
+      height: calc(100% + 10px);
+      width: calc(100% + 10px);
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      z-index: -1;
+      border-radius: 10px;
+      background: linear-gradient(98deg, rgb(144, 112, 218), rgb(0, 191, 255), rgb(121, 238, 3), rgb(179, 146, 201));
+      background-size: 300% 100%;
+      animation: animate 3s ease infinite;
+  }
+
+  @keyframes animate{
+      to{
+          background-position: 0% 0%;
+      }
+      50%{
+          background-position: 90% 0%;
+          
+      }
+      100%{
+          background-position: 0% 0%;
+      }
+
+  }
