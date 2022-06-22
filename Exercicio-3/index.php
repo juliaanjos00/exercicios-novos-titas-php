@@ -31,51 +31,44 @@
         
 
   <?php
-
-    $nome ="";
-    $idade= "";
-    $sexo= "";
-
-    if(isset($_POST['nome']) && ($_POST['sexo']) && ($_POST['idade'])) {
-				
-        $nome = $_POST['nome'];
-        $sexo = $_POST['sexo'];
-        $idade = $_POST['idade'];
- }
-
-    if(isset($_POST['value1']) && ($_POST['value2']) && ($_POST['value3'])) {
-		
-    if ($sexo == "Feminino" && $idade <= 25) {
-        echo "<div class='results'> $nome,Parabéns!Você foi aceita.</div>";
-    } 
     
-    else if ($sexo == "feminino" && $idade <= 25) {
-      echo "<div class='results'> $nome, Parabéns!Você foi aceita.</div>";
+     if(isset($_POST['nome']) && ($_POST['sexo']) && ($_POST['idade'])) {
+                 
+         $nome = $_POST['nome'];
+         $sexo = $_POST['sexo'];
+         $idade = $_POST['idade'];
+ 
+     if ($sexo == "Feminino" && $idade <= 25) {
+         echo "<div class='results'> $nome,Parabéns!Você foi aceita.</div>";
+     } 
+     
+        else if ($sexo == "feminino" && $idade <= 25) {
+        echo "<div class='results'> $nome, Parabéns!Você foi aceita.</div>";
+        }
+    
+        else if ($sexo == "Feminino" && $idade >= 25) {
+            echo "<div class='results'>$nome, Não aceita.</div>";
+        }
+    
+        else if ($sexo == "feminino" && $idade >= 25) {
+            echo "<div class='results'> $nome, Não aceita.</div>";
+        }
+    
+        else if ($sexo == "masculino" && $idade >= 25) {
+            echo "<div class='results'> $nome, Não aceito, projeto destinado a pessoas do sexo feminino.</div>";
+        }
+        else if ($sexo == "Masculino" && $idade >= 25) {
+            echo "<div class='results'> $nome Não aceito, projeto destinado a pessoas do sexo feminino.</div>";
+        }
+    
+        else if ($sexo == "masculino" && $idade <= 25) {
+            echo "<div class='results'> $nome Não aceito,projeto destinado a pessoas do sexo feminino.</div>";
+        }
+        else if ($sexo == "Masculino" && $idade <= 25) {
+            echo "<div class='results'> $nome Não aceito, projeto destinado a pessoas do sexo feminino .</div>";
+        }
+    
     }
-
-    else if ($sexo == "Feminino" && $idade >= 25) {
-        echo "<div class='results'>$nome, Não aceita.</div>";
-    }
-
-    else if ($sexo == "feminino" && $idade >= 25) {
-        echo "<div class='results'> $nome, Não aceita.</div>";
-    }
-
-    else if ($sexo == "masculino" && $idade >= 25) {
-        echo "<div class='results'> $nome, Não aceito, projeto destinado a pessoas do sexo feminino.</div>";
-    }
-    else if ($sexo == "Masculino" && $idade >= 25) {
-        echo "<div class='results'> $nome Não aceito, projeto destinado a pessoas do sexo feminino.</div>";
-    }
-
-    else if ($sexo == "masculino" && $idade <= 25) {
-        echo "<div class='results'> $nome Não aceito,projeto destinado a pessoas do sexo feminino.</div>";
-    }
-    else if ($sexo == "Masculino" && $idade <= 25) {
-        echo "<div class='results'> $nome Não aceito, projeto destinado a pessoas do sexo feminino .</div>";
-    }
-
-}
 
  ?>
     </form>
