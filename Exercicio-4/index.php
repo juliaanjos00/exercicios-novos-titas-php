@@ -19,7 +19,7 @@
       </h3> <br />
      </p>
 
-     <form id="formulario" action="Exercicio-4/index.php" method="post">
+     <form id="formulario" action="/Exercicio-4/index.php" method="post">
        <label for="number" >Número 1 </label> <br />
        <input type="number"  class= "box"   name="value1"  id="valor1"  placeholder="Digite um número..."/>
        <div class="underline"></div>
