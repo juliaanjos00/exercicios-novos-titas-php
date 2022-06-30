@@ -73,3 +73,12 @@ input{
     to {background-position: 100% 100%;}
 }
 
+.results{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 40px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to left, #89c7c2,#53bbaa);
+    color: rgb(8, 66, 175);
+}
