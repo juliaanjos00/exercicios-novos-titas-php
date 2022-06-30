@@ -19,17 +19,19 @@
 
         <form id="formulario" action="/Exercicio-6/index.php" method="post">
             <div class="input-field">
-                <input type="number" name="value1" value="<?= $num1 ?>" id="valor1" autocomplete="off" placeholder="Adicione um numero!"/>
+                <input type="number" name="value1" autocomplete="off" placeholder="Adicione um numero!"/>
                 <div class="underline"></div>
             </div>
-              <br /><select name="box" action="#" method="get"> 
+              <br /><select name="box" action="#"> 
                   
               <option>Português(Brasil)</option> 
               <option> English </option>
             
              </select><br />
                <br /> <input type="submit" class="button" name="enviar" value="Enviar" class="enviar"/>
-        </form> 
+
+     </form> 
     </div> 
+        
 </body>
 </html>
