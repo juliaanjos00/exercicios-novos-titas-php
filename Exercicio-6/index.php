@@ -8,12 +8,14 @@
     <title>Exercicio-6</title>
 </head>
 <body>
-        <div class="form">
-            <h2>Exercício 6</h2>
+    <div class="form">
+        <h2>Exercício 6</h2>
 
-            <br /><h3> 
-                Entre com um número inteiro entre 1 e 12 e o algoritimo vai mostrar um mês correspondente ao número
-            </h3><br />
+        <br />
+        <h3> 
+            Entre com um número inteiro entre 1 e 12 e o algoritimo vai mostrar um mês correspondente ao número
+        </h3>
+        <br />
 
             <form id="formulario" action="/Exercicio-6/index.php" method="post">
                 <div class="input-field">
@@ -26,10 +28,54 @@
                     <option value='en'> English </option>
                 </select><br />
 
-                <br /> <input type="submit" class="button" name="enviar" value="Enviar" class="enviar"/>
+        switch ($mes) {
+            case 1:
+                echo "<div class='results'>Janeiro<div>";
+                break;
+            case 2:
+                echo "<div class='results'>Fevereiro<div>";
+                break;
+            case 3:
+                echo "<div class='results'>Março<div>";
+                break;
+            case 4:
+                echo "<div class='results'>Abril<div>";
+                break;
+            case 5:
+                echo "<div class='results'>Maio<div>";
+                break;
+            case 6:
+                echo "<div class='results'>Junho<div>";
+                break;
+            case 7:
+                echo "<div class='results'>Julho<div>";
+                break;
+            case 8:
+                echo "<div class='results'>Agosto<div>";
+                break;
+            case 9:
+                echo "<div class='results'>Setembro<div>";
+                break;
+            case 10:
+                echo "<div class='results'>Outubro<div>";
+                break;
+            case 11:
+                echo "<div class='results'>Novembro<div>";
+                break;
+            case 12:
+                echo "<div class='results'>Dezembro<div>";
+                break;
+            default:
+                echo "<div class='results'>Digite somente números do 1 ao 12!<div>";
+                break;
+        }
+    }
 
-            </form> 
-        </div> 
+    ?>
+
+
+     </form> 
+    </div> 
         
 </body>
 </html>
