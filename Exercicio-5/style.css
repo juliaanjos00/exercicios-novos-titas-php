@@ -88,3 +88,13 @@ input{
       }
 
   }
+
+  .results{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 20px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to left, #89c7c2,#53bbaa);
+    color: rgb(22, 27, 36);
+} 
