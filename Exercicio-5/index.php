@@ -18,13 +18,13 @@
 
         <form id=campo id="formulario" action="/Exercicio-5/index.php" method="post"><br />
          <label for= "number">Lado AB</label><br />
-         <input type="number"  placeholder= "Adicione um número!" id="value1"/><br />
+         <input type="number" name="value1" placeholder= "Adicione um número!" id="value1"/><br />
         
          <label for= "number">Lado BC </label><br />
-         <input type="number"  placeholder="Adicione um número!" id="value2"/><br /> 
+         <input type="number" name="value2" placeholder="Adicione um número!" id="value2"/><br /> 
         
          <label for= "number">Lado CB</label><br />
-         <input type="number" placeholder="Adicione um número!" id="value3"/><br />
+         <input type="number" name="value3" placeholder="Adicione um número!" id="value3"/><br />
 
          <div class="button"> <input type="submit" class= "button" name="enviar" value="Enviar"/></div> 
 
