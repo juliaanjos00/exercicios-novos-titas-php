@@ -17,60 +17,40 @@
         </h3>
         <br />
 
-            <form id="formulario" action="/Exercicio-6/index.php" method="post">
-                <div class="input-field">
-                    <input type="number" name="value1" autocomplete="off" placeholder="Adicione um numero!"/>
-                    <div class="underline"></div>
-                </div>
+        <form id="formulario" action="/Exercicio-6/index.php" method="post">
+            <div class="input-field">
+                <input type="number" name="value1" autocomplete="off" placeholder="Adicione um numero!"/>
+                <div class="underline"></div>
+            </div>
+              <br /><select name="lingua" action="#"> 
+                  
+              <option value='pt-br'> Português(Brasil)</option> 
+              <option value='en'> English </option>
+            
+             </select><br />
+               <br /> <input type="submit" class="button" name="enviar" value="Enviar" class="enviar"/>
+     
+      
+    <?php
 
-                <br /><select name="lingua" action="#"> 
-                    <option value='pt-br'>Português(Brasil)</option> 
-                    <option value='en'> English </option>
-                </select><br />
+    $mesEn=['January','February','March','April','May','June','July','Agust','September','October','November','December'];
+    $mesPtbr=['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+     
+    if(isset($_POST['value1'])){
+        $mes= $_POST['value1'];
 
-        switch ($mes) {
-            case 1:
-                echo "<div class='results'>Janeiro<div>";
-                break;
-            case 2:
-                echo "<div class='results'>Fevereiro<div>";
-                break;
-            case 3:
-                echo "<div class='results'>Março<div>";
-                break;
-            case 4:
-                echo "<div class='results'>Abril<div>";
-                break;
-            case 5:
-                echo "<div class='results'>Maio<div>";
-                break;
-            case 6:
-                echo "<div class='results'>Junho<div>";
-                break;
-            case 7:
-                echo "<div class='results'>Julho<div>";
-                break;
-            case 8:
-                echo "<div class='results'>Agosto<div>";
-                break;
-            case 9:
-                echo "<div class='results'>Setembro<div>";
-                break;
-            case 10:
-                echo "<div class='results'>Outubro<div>";
-                break;
-            case 11:
-                echo "<div class='results'>Novembro<div>";
-                break;
-            case 12:
-                echo "<div class='results'>Dezembro<div>";
-                break;
-            default:
-                echo "<div class='results'>Digite somente números do 1 ao 12!<div>";
-                break;
-        }
-    }
+        $language=$_POST['lingua'];
+     if($language=="pt-br"){
+         echo   $mesPtbr[$mes -1];
+   
+     } else { 
+        echo $mesEn[$mes -1];
+     }
+     }
+     
 
+    
+  
     ?>
 
 
