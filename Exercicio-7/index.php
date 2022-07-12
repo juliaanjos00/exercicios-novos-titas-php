@@ -25,15 +25,39 @@
                    <br /> <label for= "text">Livro Escolhido</label><br />
                     <input type="text"  placeholder="livro..." id="value2"/><br /> 
 
-                    <br /><select name="usuario" action="#"> 
-                    <option value='Pf'>Professor(a)</option> 
-                    <option value='Al'> Aluno(a) </option>
-                    </select><br />
+                    <label for="text">Professor(a)/Aluno(a)</label><br />
+                    <input type="text" name="value3" id="value3" autocomplete="off" placeholder="..."/>
+                    <div class="underline"></div>
                         
 
                   <br /><div class="button"> <input type="submit" class= "button" name="enviar" value="Enviar"/></div> 
 
     </div>
+
+    <?php
+
+if(isset($_POST['value1']) && ($_POST['value2']) && $_POST['value3']) {
+
+    $nome = $_POST['value1'];
+    $livro = $_POST['value2'];
+    $user = $_POST['value3'];
+
+    switch($user){
+        case "Professor(a)":
+            echo "Professor:$nome </br> Livro:$livro </br> Prazo para devolução: 10 dias!";
+            break;
+        case "Aluno(a)":
+            echo "Aluno: $nome </br> Livro: $livro </br> Prazo para devolução: 3 dias!";
+
+    }
+}
+
+
+
+
+
+
+        ?>
 
 </body>
 </html>
