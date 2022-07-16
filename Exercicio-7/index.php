@@ -20,13 +20,13 @@
 
                 <form id=campo id="formulario" action="/Exercicio-7/index.php" method="post"><br />
                     <label for= "text">Nome</label><br />
-                    <input type="text"  placeholder= "digite seu nome..." id="value1"/><br />
+                    <input type="text"  placeholder= "digite seu nome..."name="nome" id="nome"/><br />
                     
                    <br /> <label for= "text">Livro Escolhido</label><br />
-                    <input type="text"  placeholder="livro..." id="value2"/><br /> 
+                    <input type="text"  placeholder="livro..." name= "livro" id="livro"/><br /> 
 
                     <label for="text">Professor(a)/Aluno(a)</label><br />
-                    <input type="text" name="value3" id="value3" autocomplete="off" placeholder="..."/>
+                    <input type="text" name="usuario" id="usuario" autocomplete="off" placeholder="..."/>
                     <div class="underline"></div>
                         
 
@@ -36,25 +36,27 @@
 
     <?php
 
-if(isset($_POST['value1']) && ($_POST['value2']) && $_POST['value3']) {
+if(isset($_POST['nome']) && ($_POST['livro']) && $_POST['usuario']) {
 
-    $nome = $_POST['value1'];
-    $livro = $_POST['value2'];
-    $user = $_POST['value3'];
+    $nome = $_POST['nome'];
+    $livro = $_POST['livro'];
+    $user = $_POST['usuario'];
 
-    switch($user){
-        case "Professor(a)":
-            echo "Professor:$nome </br> Livro:$livro </br> Prazo para devolução: 10 dias!";
-            break;
-        case "Aluno(a)":
-            echo "Aluno: $nome </br> Livro: $livro </br> Prazo para devolução: 3 dias!";
+    if ($user === "Professor(a)"){
+    
+        echo "<div class='results'>Professor(a) $nome 10 dias para devolução do$livro</div>";
 
+    
+      
+    } elseif ($user === "Aluno(a)") {
+
+        echo "<div class='results'>Aluno(a) $nome.  3 dias para devolução do  $livro</div>";
+
+  
     }
+
 }
-
-
-
-
+    
 
 
         ?>
