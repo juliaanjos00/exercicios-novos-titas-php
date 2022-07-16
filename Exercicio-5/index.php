@@ -32,7 +32,7 @@
 
               if(isset($_POST['value1']) && ($_POST['value2']) && ($_POST['value3'])) {
 
-                if ($AB==$BC && $BC==$CB) 
+                if ($AB!=$BC && $BC!=$CB) 
                   echo "<div class='results'>Triangulo Equilatero,classificado quando todos os ângulos tem a mesma medidas. </div>";
                 
                 elseif ($AB!=$CB && $AB!=$BC && $BC!=$CB)
