@@ -8,32 +8,33 @@
     <title>Exercicio 7</title>
 </head>
 <body>
-     <div class='form'>
-        <h2> Exercício 7 </h2>
-         <h3> A biblioteca de uma universidade deseja fazer
-                um algoritmo que leia o nome do livro que
-                será emprestado, o tipo de usuário (professor
-                ou aluno) e possa imprimir um recibo
-                conforme mostrado a seguir. Considerar que
-                o professor tem 10 dias para devolver o livro
-                o aluno somente 3 dias.</h3>
+        <div class='form'>
+
+            <h2> Exercício 7 </h2>
+            
+            <h3>
+                 A biblioteca de uma universidade deseja fazer
+                    um algoritmo que leia o nome do livro que
+                    será emprestado, o tipo de usuário (professor
+                    ou aluno) e possa imprimir um recibo
+                    conforme mostrado a seguir. Considerar que
+                    o professor tem 10 dias para devolver o livro
+                    o aluno somente 3 dias.
+                </h3>
 
                 <form id=campo id="formulario" action="/Exercicio-7/index.php" method="post"><br />
                     <label for= "text">Nome</label><br />
-                    <input type="text"  placeholder= "digite seu nome..." id="value1"/><br />
+                    <input type="text"  placeholder= "digite seu nome..." name="nome" id="nome"/><br />
                     
-                   <br /> <label for= "text">Livro Escolhido</label><br />
-                    <input type="text"  placeholder="livro..." id="value2"/><br /> 
+                    <br /> <label for= "text">Livro Escolhido</label><br />
+                    <input type="text"  placeholder="livro..." name="livro" id="livro"/><br /> 
 
-                    <br /><select name="usuario" action="#"> 
-                    <option value='Pf'>Professor(a)</option> 
-                    <option value='Al'> Aluno(a) </option>
-                    </select><br />
+                    <input type="text" name="usuario" id="usuario" autocomplete="off" placeholder="..."/>
                         
 
-                  <br /><div class="button"> <input type="submit" class= "button" name="enviar" value="Enviar"/></div> 
+                    <br /><div class="button"> <input type="submit" class= "button" name="enviar" value="Enviar"/></div> 
 
-    </div>
+        </div>
 
 </body>
 </html>
