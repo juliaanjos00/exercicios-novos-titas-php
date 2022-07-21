@@ -22,17 +22,18 @@
                     o aluno somente 3 dias.
                 </h3>
 
-                <form id=campo id="formulario" action="/Exercicio-7/index.php" method="post"><br />
+                <form id=campo id="formulario" action="/Exercicio-7/index.php" method="post">
                     <label for= "text">Nome</label><br />
-                    <input type="text"  placeholder= "digite seu nome..." name="nome" id="nome"/><br />
+                    <input type="text"  placeholder= "digite seu nome..." name="nome" id="nome">
                     
-                    <br /> <label for= "text">Livro Escolhido</label><br />
-                    <input type="text"  placeholder="livro..." name="livro" id="livro"/><br /> 
-
+                     <label for= "text">Livro Escolhido</label>
+                    <input type="text"  placeholder="livro..." name="livro" id="livro"/>
+        
+                    <label for= "text">Pofessor(a) ou Aluno(a)</label>
                     <input type="text" name="usuario" id="usuario" autocomplete="off" placeholder="..."/>
                         
 
-                    <br /><div class="button"> <input type="submit" class= "button" name="enviar" value="Enviar"/></div> 
+                    <div class="button"> <input type="submit" class= "button" name="enviar" value="Enviar"/></div> 
 
         </div>
 
