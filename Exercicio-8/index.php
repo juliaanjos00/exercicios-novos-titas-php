@@ -19,7 +19,36 @@
             <input type="number" name="number" value="<?= $num ?>" id="number" autocomplete="off" placeholder="Digite um numero..."/>
             <div class="underline"></div>
             <input type="submit" class="button" name="enviar" value="Enviar" class="enviar"/>	
-    </form>
+   
+   
+   <?php
+           
+           if(isset($_POST['number'])) {
+                            
+            $num= $_POST['number'];
+
+            for ($n=1; $a <= $num; $n++) 
+
+                echo "<div class='results'>$n<div>" . "";
+
+        }
+                        
+
+
+
+
+
+   ?>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+          </form>
                         
    <div>
 </body>
